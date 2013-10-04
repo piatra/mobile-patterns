@@ -1,0 +1,32 @@
+{
+  "name": "sidemenu",
+  "version": "0.0.1",
+  "description": "sliding menu from the left; hamburger icon and everything",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piatra/mobile-patterns"
+  },
+  "keywords": [
+    "sidemenu",
+    "js",
+    "mobile",
+    "pattern"
+  ],
+  "author": "Andrei Oprea @ndreio",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/piatra/mobile-patterns/issues"
+  },
+  "dependencies": {
+    "topcoat-icon-button": "~0.3.4",
+    "topcoat-search-input": "~0.3.1",
+    "topcoat-list": "~0.5.0",
+    "topcoat-navigation-bar": "~0.4.2",
+    "brfs": "0.0.8",
+    "topcoat-button": "~0.5.3"
+  }
+}

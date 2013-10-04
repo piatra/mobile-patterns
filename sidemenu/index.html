@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Topcoat</title>
+    <meta name=viewport content=width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1>
+    <link rel="stylesheet" href="node_modules/topcoat-icon-button/css/topcoat-icon-button-mobile-light.css">
+    <link rel="stylesheet" href="node_modules/topcoat-search-input/css/topcoat-search-input-mobile-light.css">
+    <link rel="stylesheet" href="node_modules/topcoat-navigation-bar/css/topcoat-navigation-bar-mobile-light.css">
+    <link rel="stylesheet" href="node_modules/topcoat-list/css/topcoat-list-mobile-light.css">
+    <link rel="stylesheet" href="node_modules/topcoat-button/css/topcoat-button-mobile-light.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+
+    <div id="menu" class="topcoat-list sidemenu-left hidden">
+      <h3 class="topcoat-list__header">Category
+        <span class='pull-right topcoat-button topcoat-button--small js-handler--toggle'> x </span>
+      </h3>
+      <ul class="topcoat-list__container">
+        <li class="topcoat-list__item">
+        <input type="search" class="topcoat-search-input full" placeholder="Search...">
+        </li>
+        <li class="topcoat-list__item">
+        Item
+        </li>
+        <li class="topcoat-list__item">
+        Item
+        </li>
+      </ul>
+      <h3 class="topcoat-list__header">Category</h3>
+      <ul class="topcoat-list__container">
+        <li class="topcoat-list__item">
+        Item
+        </li>
+        <li class="topcoat-list__item">
+        Item
+        </li>
+        <li class="topcoat-list__item">
+        Item
+        </li>
+      </ul>
+       <h3 class="topcoat-list__header">Category</h3>
+      <ul class="topcoat-list__container">
+        <li class="topcoat-list__item">
+        Item
+        </li>
+        <li class="topcoat-list__item">
+        Item
+        </li>
+      </ul>
+
+    </div>
+
+<div class="topcoat-navigation-bar on-top">
+        <div class="topcoat-navigation-bar__item left quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--menu-stack js-handler--toggle"></span>
+            </a>
+        </div>
+        <div class="topcoat-navigation-bar__item center half">
+            <h1 class="topcoat-navigation-bar__title">Sidemenu Example</h1>
+        </div>
+        <div class="topcoat-navigation-bar__item right quarter">
+            <a class="topcoat-icon-button--quiet">
+              <span class="topcoat-icon topcoat-icon--edit"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+
+    function $ (sel) {
+      return document.querySelector(sel);
+    }
+
+    var menu = $('#menu');
+    
+    [].forEach.call(document.querySelectorAll('.js-handler--toggle'), function (el) { 
+      el.addEventListener('click', toggle);
+    })
+
+    function toggle (e) {
+      console.log('click');
+      e.preventDefault();
+      menu.classList.toggle('hidden');
+    }
+
+  </script>
+
+  </body>
+</html>
